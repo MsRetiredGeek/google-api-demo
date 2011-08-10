@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+<title>Notepad</title>
+<script src="/home/khiem_dohoang/java/projects/google-code/closure-library/closure/goog/base.js"></script>
+<script src="../javascript/notepad.js"></script>
+</head><body>
+<div id="notes">
+</div>
+
+<script>
+function main() {
+  var noteData = [
+    {'title': 'Note 1', 'content': 'Content of Note 1'},
+    {'title': 'Note 2', 'content': 'Content of Note 2'}];
+
+  var noteListElement = document.getElementById('notes');
+  var notes = tutorial.notepad.makeNotes(noteData, noteListElement);
+}
+main();
+</script>
+</body></html>
